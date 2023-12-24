@@ -9,5 +9,8 @@
 .affirmationContent p{
   display: flex;
   align-items: flex-start;
+}
 
+.siganatureBox{
+  padding-top: 4vh;
 }

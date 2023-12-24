@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./app.css">
-  <title>Affirmation</title>
+  <title>Affirmation (UNDER DEVELOPMENT) </title>
 </head>
 
 <body>
-  <div class="caseNumber">
+  <div class="topTitle">
     <p>IN THE HIGH COURT OF THE</p>
     <p>HONG KONG SPECIAL ADMINISTRATIVE REGION</p>
     <p>COURT OF FIRST INSTANCE</p>
@@ -25,17 +25,21 @@
       <option value="ACTION">Plaintiff</option>
       <option value="BANKRUPTCY">Applicant</option>
     </select>
-    <input type="text" id="deponent"> 
+    <input type="text" id="plaintiff">
     <p>and</p>
     <select id="defendanRole">
       <option value="ACTION">Defendant</option>
       <option value="BANKRUPTCY">Respondent</option>
     </select>
-    <input type="text" id="deponent"> 
+    <input type="text" id="defendant">
+  </div>
+
+  <div class="midTitle">
+    <p>AFFIRMATION OF <input type="text" id="deponent" placeholder="name"> (UNDER DEVELOPMENT) </p>
   </div>
   <div class="solemnlyAffirm">
-    <p>Affirmation</p>
-    <p>I <input type="text" id="deponent" placeholder="name"> of <input type="text" id="locationInput"
+
+    <p>I <span id="depondentName">(NAME to be linked)</span> of <input type="text" id="locationInput"
         placeholder="address"> solemnly and sincerely affirm as follows:</p>
   </div>
 
@@ -50,17 +54,18 @@
     </select>to the Summons filed on <input type="text" id="dateInput">, 20 <input type="text" id="dateInput">.</p>
   <p>The facts deposed to herein are true to the best of my knowledge, information, and belief save where otherwise
     stated.</p>
-  <p>And I make oath and say/solemnly and sincerely affirm* that the contents of this affidavit/affirmation* are true.
+  <p>And I make solemnly and sincerely affirm that the contents of this affirmation are true.
   </p>
   <p>___________________________</p>
-  <p>Signature of [TARGET]</p>
+  <p>Signature of <span id="depondentName">(NAME to be linked)</span></p>
   <p>AFFIRMED at <textarea name="" id="" cols="30" rows="1" placeholder="Commissioner for Oaths, Judiciary"></textarea>
   </p>
-  <p>this day of 20 <input type="text" id="swornDateInput" placeholder="Enter year">.</p>
+  <p>this day <input type="text" id="swornDateInput"> of 20 <input type="text" id="swornYearInput" placeholder="24">.
+  </p>
   <p>Before me,</p>
-  <textarea name="" id="" cols="30" rows="4" placeholder="Commissioner for Oaths
-  Judiciary"></textarea>
-  <p>This affirmation is filed on behalf of [TARGET].</p>
+  <textarea name="" id="" cols="30" rows="4" placeholder="Commissioner for Oaths, Judiciary"></textarea>
+  <p>This affirmation is filed on behalf of <input type="text" id="side" placeholder="Plaintiff/Defendant">.</p>
+  <button id="addParagraph">Printable Version in New Tab</button>
   <script src="app.js">
   </script>
 </body>

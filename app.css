@@ -1,9 +1,13 @@
-.caseNumber{
+.topTitle, .midTitle{
   text-align: center;
+}
 
+.midTitle{
+  font-size: large;
 }
 
 .affirmationContent p{
   display: flex;
   align-items: flex-start;
+
 }

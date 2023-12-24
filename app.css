@@ -1,0 +1,9 @@
+.caseNumber{
+  text-align: center;
+
+}
+
+.affirmationContent p{
+  display: flex;
+  align-items: flex-start;
+}

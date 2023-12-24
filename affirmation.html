@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./app.css">
+  <title>Affirmation</title>
+</head>
+
+<body>
+  <div class="caseNumber">
+    <p>IN THE HIGH COURT OF THE</p>
+    <p>HONG KONG SPECIAL ADMINISTRATIVE REGION</p>
+    <p>COURT OF FIRST INSTANCE</p>
+    <p> <select id="caseType">
+        <option value="ACTION">ACTION</option>
+        <option value="MISCELLANEOUS PROCEEDINGS">MISCELLANEOUS PROCEEDINGS</option>
+        <option value="BANKRUPTCY">BANKRUPTCY</option>
+      </select>NO.<input type="text" id="caseNumber"> OF 20<input type="text" id="dateInput"></p>
+  </div>
+  <div class="parties">
+    <p>BETWEEN</p>
+    <select id="plaintiffRole">
+      <option value="ACTION">Plaintiff</option>
+      <option value="BANKRUPTCY">Applicant</option>
+    </select>
+    <input type="text" id="deponent"> 
+    <p>and</p>
+    <select id="defendanRole">
+      <option value="ACTION">Defendant</option>
+      <option value="BANKRUPTCY">Respondent</option>
+    </select>
+    <input type="text" id="deponent"> 
+  </div>
+  <div class="solemnlyAffirm">
+    <p>Affirmation</p>
+    <p>I <input type="text" id="deponent" placeholder="name"> of <input type="text" id="locationInput"
+        placeholder="address"> solemnly and sincerely affirm as follows:</p>
+  </div>
+
+  <div class="affirmationContent">
+    <p>1. <textarea id="paragraph1" rows="4" cols="50"></textarea></p>
+    <button id="addParagraph">Add Paragraph</button>
+  </div>
+
+  <p>I make affirmation<select id="side">
+      <option value="ACTION">in support of</option>
+      <option value="MISCELLANEOUS PROCEEDINGS">in opposition to</option>
+    </select>to the Summons filed on <input type="text" id="dateInput">, 20 <input type="text" id="dateInput">.</p>
+  <p>The facts deposed to herein are true to the best of my knowledge, information, and belief save where otherwise
+    stated.</p>
+  <p>And I make oath and say/solemnly and sincerely affirm* that the contents of this affidavit/affirmation* are true.
+  </p>
+  <p>___________________________</p>
+  <p>Signature of [TARGET]</p>
+  <p>AFFIRMED at <textarea name="" id="" cols="30" rows="1" placeholder="Commissioner for Oaths, Judiciary"></textarea>
+  </p>
+  <p>this day of 20 <input type="text" id="swornDateInput" placeholder="Enter year">.</p>
+  <p>Before me,</p>
+  <textarea name="" id="" cols="30" rows="4" placeholder="Commissioner for Oaths
+  Judiciary"></textarea>
+  <p>This affirmation is filed on behalf of [TARGET].</p>
+  <script src="app.js">
+  </script>
+</body>
+
+</html>

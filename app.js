@@ -19,8 +19,13 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 })
 
+const deponentEntry = document.querySelector("#deponentEntry")
 const deponent = document.querySelectorAll('.deponent')
 
-for (let appearance of deponent) {
-  appearance.innerText = '(NAME TO BE OBTAINED FROM TITLE)'
-}
+deponentEntry.addEventListener("input",(event) => {
+  const enteredName = event.target.value;
+  
+  deponent.forEach(appearance => {
+    appearance.innerText = enteredName || '(deponent name)';
+  });
+}); 

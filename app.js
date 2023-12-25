@@ -19,3 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 })
 
+const deponent = document.querySelectorAll('.deponent')
+
+for (let appearance of deponent) {
+  appearance.innerText = '(NAME TO BE OBTAINED FROM TITLE)'
+}

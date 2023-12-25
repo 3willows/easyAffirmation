@@ -4,9 +4,10 @@
 
 .midTitle{
   font-size: large;
+  text-transform: uppercase;
 }
 
-.affirmationContent p{
+.affirmationContent p, #conclusion{
   display: flex;
   align-items: flex-start;
 }

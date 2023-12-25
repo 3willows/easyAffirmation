@@ -35,37 +35,45 @@
   </div>
 
   <div class="midTitle">
-    <p>AFFIRMATION OF <input type="text" id="deponentEntry" placeholder="Deponent name"> (UNDER DEVELOPMENT) </p>
+    <p>(UNDER DEVELOPMENT)</p>
+    <p>AFFIRMATION OF <span class="deponent deponentTitle">(DEPONENT NAME) </span> </p>
   </div>
-  <div class="solemnlyAffirm">
 
-    <p>I, <span class="deponent">(deponent name)</span>, of <input type="text" id="locationInput" placeholder="address"> solemnly and
+  <div class="solemnlyAffirm">
+    <p>I, <input type="text" id="deponentEntry" placeholder="Deponent name">, of <input type="text" id="locationInput"
+        placeholder="address">
+      solemnly and
       sincerely affirm as follows:</p>
   </div>
 
   <div class="affirmationContent">
-    <p>1. <textarea id="paragraph1" rows="4" cols="50"></textarea></p>
+    <p>1.<textarea id="paragraph1" rows="4" cols="50 "
+        placeholder="I am the director of [the Plaintiff].  I am duly authorised to make this affirmation on behalf of [the Plaintiff]."></textarea>.
+    </p>
+    <p>2.<textarea id="paragraph1" rows="4" cols="50 "
+        placeholder="I make this affirmation in support of the Plaintiff's Summons filed on [date] for [an injunction against the Defendant]. Unless otherwise stated, the facts deposed to here are true to the best of my knowledge, information, and belief."></textarea>.
+    </p>
+    <p>3. <textarea id="paragraph3" rows="4" cols="50"
+        placeholder="(Summary of the facts and application of legal principles)"></textarea></p>
     <button id="addParagraph">Add Paragraph</button>
+    <p><span id="conclusion"> 4. </span>
+      <textarea id="conclusion" rows="4" cols="50"
+        placeholder="For the above reasons, I humbly pray the Honourable Court to make an order in terms of the Summons."></textarea>
+    </p>
+
   </div>
 
-  <p>I make this affirmation <select id="side">
-      <option value="ACTION">in support of</option>
-      <option value="MISCELLANEOUS PROCEEDINGS">in opposition to</option>
-    </select>to the Summons filed on <input type="text" id="dateInput">, 20 <input type="text" id="dateInput">.</p>
-  <p>The facts deposed to herein are true to the best of my knowledge, information, and belief save where otherwise
-    stated.</p>
-  <p>And I make solemnly and sincerely affirm that the contents of this affirmation are true.
-  </p>
   <div class="siganatureBox">
     <p>___________________________</p>
     <p>Signature of <span class="deponent">(deponent name)</span></p>
   </div>
-  <p>AFFIRMED at <textarea name="" id="" cols="30" rows="1" placeholder="Commissioner for Oaths, Judiciary"></textarea>
+  <p>AFFIRMED at <textarea name="" id="" cols="30" rows="1" placeholder="address"></textarea>
   </p>
-  <p>this day <input type="text" id="swornDateInput"> of 20 <input type="text" id="swornYearInput" placeholder="24">.
+  <p>this day <input type="text" id="swornDateInput"> of 20 <input type="text" id="swornYearInput">.
   </p>
   <p>Before me,</p>
-  <textarea name="" id="" cols="30" rows="4" placeholder="Commissioner for Oaths, Judiciary"></textarea>
+  <textarea name="" id="" cols="30" rows="4"
+    placeholder="Solicitor/Commissioner of Oaths before whom the affirmation is made"></textarea>
   <p>This affirmation is filed on behalf of <input type="text" id="side" placeholder="Plaintiff/Defendant">.</p>
   <button id="addParagraph">Printable Version in New Tab</button>
   <script src="app.js">

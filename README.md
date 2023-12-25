@@ -4,11 +4,26 @@
 2. Flow:
    - User selects the required form.
    - A page is displayed with text input boxes where required.
-   - User presses button at the bottom.  New tab opens with a printable form.
+   - User presses button at the bottom.  2 new tab opens, showing:
+      - Printable form
+      - Backcksheet
+     
+## SCHEDULE
 
-## PLAN
+- [ ] Affirmation
+- [ ] Index page
+- [ ] Summons
+   
+## PLAN FOR AFFIRMATION
 
-1. Use [pandocs](https://github.com/jgm/pandoc) to generate an HTML template for (say) an affirmation
-2. Make all the underlined parts text input boxes.
-3. Add a "print" button at the end of the document.
-4. Opens a new tab, which displays an HTML page with all the text in appropriate places.  
+- [x] Use [pandocs](https://github.com/jgm/pandoc) to generate an HTML template for (say) an affirmation
+- [x] Make all the underlined parts text input boxes.
+- [x] Add a "printable version" button at the end of the document.
+- [ ] Add functionality for users to add more parties (multiple Ps, multiple Ds)
+- [ ] Output an HTML page with appropriate content
+- [ ] Backsheet
+
+## POTENTIAL FURTHER FEATURES
+
+- reminder about jurat rule
+- customise so that users can enter special case names/parties (e.g. HCZZ, Third Party)

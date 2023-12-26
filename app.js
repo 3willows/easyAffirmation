@@ -5,11 +5,20 @@ const pSideForm = document.querySelector('#pSideForm')
 const pSideName = document.querySelector('#pSideName')
 const pSideRole = document.querySelector('#pSideRole')
 
+let pNumber = 1
 pSideForm.addEventListener('submit', e => {
   e.preventDefault()
-  const newLi = document.createElement("li")
-  newLi.innerText =`${pSideName.value.toUpperCase()}  ${pSideRole.value}`
+
+  const newLi = document.createElement('li')
+  newLi.innerText = `${pSideName.value.toUpperCase()}`
   pSideBegins.append(newLi)
+
+  const newSpan = document.createElement('span')
+  newSpan.innerText = `${pSideRole.value} No.${pNumber}`
+  newSpan.classList.add("role")
+  pNumber++
+  newLi.insertAdjacentElement('beforeend', newSpan)
+
   pSideName.value = ''
 })
 

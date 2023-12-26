@@ -3,12 +3,13 @@
 }
 
 .topTitle, .midTitle{
-  text-align: center;
+  text-align: center
 }
 
 .midTitle{
   font-size: large;
   text-transform: uppercase;
+  color: red;
 }
 
 .affirmationContent p, #conclusion{

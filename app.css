@@ -1,3 +1,7 @@
+.topRightCorner {
+  text-align: right;
+}
+
 .topTitle, .midTitle{
   text-align: center;
 }

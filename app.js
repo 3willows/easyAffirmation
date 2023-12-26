@@ -19,13 +19,40 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 })
 
-const deponentEntry = document.querySelector("#deponentEntry")
+// enter the deponent name in appropriate places
+
+const deponentEntry = document.querySelector('#deponentEntry')
 const deponent = document.querySelectorAll('.deponent')
 
-deponentEntry.addEventListener("input",(event) => {
-  const enteredName = event.target.value;
-  
+deponentEntry.addEventListener('input', event => {
+  const enteredName = event.target.value
+
   deponent.forEach(appearance => {
-    appearance.innerText = enteredName || '(deponent name)';
-  });
-}); 
+    appearance.innerText = enteredName || '(deponent name)'
+  })
+})
+
+// enter case number on the top right corner
+
+const caseAlpha = document.querySelector('#caseAlpha')
+const caseAlphaAbbrev = document.querySelector('#caseAlphaAbbrev')
+
+caseAlpha.addEventListener('input', () => {
+  if (caseAlpha.value === 'A') {
+    caseAlphaAbbrev.innerText = 'HCA'
+  } else if (caseAlpha.value === 'B') {
+    caseAlphaAbbrev.innerText = 'HCB'
+  } else if (caseAlpha.value === 'MP') {
+    caseAlphaAbbrev.innerText = 'HCMP'
+  }
+})
+
+const caseDigitAbbrev = document.querySelector('#caseDigitAbbrev')
+
+const caseNumberEntry = document.querySelector('#caseNumber')
+
+console.log(caseAlpha.value)
+
+caseNumberEntry.addEventListener('input', () => {
+  caseDigitAbbrev.innerText = `${caseNumberFirst.value}/${caseNumberYear.value}`
+})

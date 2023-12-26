@@ -12,15 +12,21 @@
 </head>
 
 <body>
+  <div class="topRightCorner">
+    <span id="caseAlphaAbbrev">HCA</span>
+    <span id="caseDigitAbbrev"> # / 2024
+    </span>
+  </div>
   <div class="topTitle">
     <p>IN THE HIGH COURT OF THE</p>
     <p>HONG KONG SPECIAL ADMINISTRATIVE REGION</p>
     <p>COURT OF FIRST INSTANCE</p>
-    <p> <select id="caseType">
-        <option value="ACTION">ACTION</option>
-        <option value="MISCELLANEOUS PROCEEDINGS">MISCELLANEOUS PROCEEDINGS</option>
-        <option value="BANKRUPTCY">BANKRUPTCY</option>
-      </select>NO.<input type="text" id="caseNumber"> OF 20<input type="text" id="dateInput"></p>
+    <p> <select id="caseAlpha">
+        <option value="A">ACTION</option>
+        <option value="MP">MISCELLANEOUS PROCEEDINGS</option>
+        <option value="B">BANKRUPTCY</option>
+      </select> <span id="caseNumber"> NO.<input type="text" id="caseNumberFirst"> OF <input type="text"
+          id="caseNumberYear"></p></span>
   </div>
   <div class="parties">
     <p>BETWEEN</p>
@@ -80,7 +86,7 @@
   <p>This affirmation is filed on behalf of <input type="text" id="side" placeholder="Plaintiff/Defendant">.</p>
   <button id="addParagraph">Printable Version in New Tab</button>
   <script src="app.js"> </script>
-  <script src="play.js"> </script>
+  <!-- <script src="play.js"> </script> -->
 </body>
 
 </html>

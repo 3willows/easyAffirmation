@@ -18,8 +18,9 @@
 - [x] Make all the underlined parts text input boxes.
 - [x] Add a "printable version" button at the end of the document.
 - [x] Deponent name automatically appears in appropriate places.
-- [ ] Case number automatically appears on the top right hand corner.
-- [ ] Affirmation number and date automatically appears on the top right hand corner.
+- [x] Case number automatically appears on the top right hand corner.
+- [ ] Add box that permits user to say whether it is the 1st, 2nd or later affirmation.  Automatically use it to generate the Affirmation number on the top right conrner.
+- [ ] Take user input as to date and the side the deponent represents to the top right corner.
 - [ ] Add functionality for users to add more parties (multiple Ps, multiple Ds)
 - [ ] Output an HTML page with appropriate content
 - [ ] Output backsheet

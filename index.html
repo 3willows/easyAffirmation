@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./app.css">
-  <link rel="stylesheet" href="./play.css">
+  <!-- <link rel="stylesheet" href="./play.css"> -->
   <title>Affirmation (UNDER DEVELOPMENT) </title>
 </head>
 
@@ -30,11 +30,19 @@
   </div>
   <div class="parties">
     <p>BETWEEN</p>
-    <select id="plaintiffRole">
-      <option value="ACTION">Plaintiff</option>
-      <option value="BANKRUPTCY">Applicant</option>
-    </select>
-    <input type="text" id="plaintiff">
+    <div id="pSideAll">
+      <ul>
+        
+      </ul>
+    </div>
+    <form action="" id="pSideForm">
+      <select id="pSideRole">
+        <option value="Plaintiff">Plaintiff</option>
+        <option value="Applicant">Applicant</option>
+      </select>
+      <input type="text" id="pSideName"><button>Add</button>
+    </form>
+
     <p>and</p>
     <select id="defendanRole">
       <option value="ACTION">Defendant</option>
@@ -67,7 +75,7 @@
     <button id="addParagraph">Add Paragraph</button>
     <p><span id="conclusion"> 4. </span>
       <textarea id="conclusion" rows="4" cols="50"
-        placeholder="For the above reasons, I humbly pray the Honourable Court to make an order in terms of the Summons."></textarea>
+        placeholder="For the above reasons, I humbly pray the Honourable Court make an order in terms of the Summons."></textarea>
     </p>
 
   </div>

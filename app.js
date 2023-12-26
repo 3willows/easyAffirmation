@@ -1,3 +1,18 @@
+// prevent default selection of form
+
+const pSideBegins = document.querySelector('#pSideAll')
+const pSideForm = document.querySelector('#pSideForm')
+const pSideName = document.querySelector('#pSideName')
+const pSideRole = document.querySelector('#pSideRole')
+
+pSideForm.addEventListener('submit', e => {
+  e.preventDefault()
+  const newLi = document.createElement("li")
+  newLi.innerText =`${pSideName.value.toUpperCase()}  ${pSideRole.value}`
+  pSideBegins.append(newLi)
+  pSideName.value = ''
+})
+
 // automatically generate paragraph boxes
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -50,8 +65,6 @@ caseAlpha.addEventListener('input', () => {
 const caseDigitAbbrev = document.querySelector('#caseDigitAbbrev')
 
 const caseNumberEntry = document.querySelector('#caseNumber')
-
-console.log(caseAlpha.value)
 
 caseNumberEntry.addEventListener('input', () => {
   caseDigitAbbrev.innerText = `${caseNumberFirst.value}/${caseNumberYear.value}`

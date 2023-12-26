@@ -10,7 +10,9 @@
      
 ## SCHEDULE
 
-- [ ] Affirmation
+- [ ] Complete affirmation
+- [ ] Add instructions pop-up
+- [ ] Add landing page
    
 ## PLAN FOR AFFIRMATION
 
@@ -19,9 +21,9 @@
 - [x] Add a "printable version" button at the end of the document.
 - [x] Deponent name automatically appears in appropriate places.
 - [x] Case number automatically appears on the top right hand corner.
-- [ ] Add box that permits user to say whether it is the 1st, 2nd or later affirmation.  Automatically use it to generate the Affirmation number on the top right conrner.
-- [ ] Take user input as to date and the side the deponent represents to the top right corner.
-- [ ] Add functionality for users to add more parties (multiple Ps, multiple Ds)
+- [x] Add functionality for users to add more parties (multiple Ps, multiple Ds)
+- [ ] Add box that permits user to say whether it is the 1st, 2nd or later affirmation.Set the Affirmation date to a default of today.
+- [ ] Generatee the Affirmation number, abbreviation of deponent, party on behalf of the affirmation, and the date of affirmation on the top right conrner.
 - [ ] Output an HTML page with appropriate content
 - [ ] Output backsheet
 

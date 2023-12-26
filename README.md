@@ -25,6 +25,10 @@
 - [ ] Output an HTML page with appropriate content
 - [ ] Output backsheet
 
+## BUG FIX
+
+- [ ] The paragraph number of the conclusion should update once paragraphs are added.
+
 ## POTENTIAL FURTHER FEATURES
 
 - [ ] reminder about jurat rule

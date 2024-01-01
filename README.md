@@ -22,17 +22,21 @@
 - [x] Deponent name automatically appears in appropriate places.
 - [x] Case number automatically appears on the top right hand corner.
 - [x] Add functionality for users to add more parties (multiple Ps, multiple Ds)
-- [ ] Add box that permits user to say whether it is the 1st, 2nd or later affirmation.Set the Affirmation date to a default of today.
+- [x] Add box that permits user to say whether it is the 1st, 2nd or later affirmation.Set the Affirmation date to a default of today.
 - [ ] Generatee the Affirmation number, abbreviation of deponent, party on behalf of the affirmation, and the date of affirmation on the top right conrner.
 - [ ] Output an HTML page with appropriate content
 - [ ] Output backsheet
+- [ ] Properly CSS and make responsive
 
 ## KNOWN BUGS
-
-- [ ] The paragraph number of the conclusion should update once paragraphs are added.
 
 ## POTENTIAL FURTHER FEATURES
 
 - [ ] reminder about jurat rule
 - [ ] extend to cover summons as well
 - [ ] customise so that users can enter special case names/parties (e.g. HCZZ, Third Party)
+      
+## FUTURE PROJECTS
+
+- Refactor this as a React App?  Is it worth it?
+- App to help students calculate dates for civil litigation (with an explanation of the three(?) different ways of reckoning days.

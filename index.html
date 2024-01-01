@@ -41,59 +41,65 @@
     </form>
 
     <p>and</p>
-    <select id="defendanRole">
-      <option value="ACTION">Defendant</option>
-      <option value="BANKRUPTCY">Respondent</option>
-    </select>
-    <input type="text" id="defendant">
-  </div>
+    <div id="dSideAll">
+      <ul>
+      </ul>
+    </div>
+    <form action="" id="dSideForm">
+      <select id="dSideRole">
+        <option value="Dlaintiff">Defendant</option>
+        <option value="Respondent">Respondent</option>
+      </select>
+      <input type="text" id="dSideName"><button>Add</button>
+    </form>
 
-  <div class="midTitle">
-    <p>(UNDER DEVELOPMENT)</p>
-    <p>AFFIRMATION OF <span class="deponent deponentTitle">[DEPONENT] </span> </p>
-  </div>
+    <div class="midTitle">
+      <p>(UNDER DEVELOPMENT)</p>
+      <p>AFFIRMATION OF <span class="deponent deponentTitle">[DEPONENT] </span> </p>
+    </div>
 
-  <div class="solemnlyAffirm">
-    <p>I, <input type="text" id="deponentEntry" placeholder="Deponent name">, of <input type="text" id="locationInput"
-        placeholder="address">
-      solemnly and
-      sincerely affirm as follows:</p>
-  </div>
+    <div class="solemnlyAffirm">
+      <p>I, <input type="text" id="deponentEntry" placeholder="Deponent name">, of <input type="text" id="locationInput"
+          placeholder="address">
+        solemnly and
+        sincerely affirm as follows:</p>
+    </div>
 
-  <div class="affirmationContent">
-    <p>1.<textarea id="paragraph1" rows="4" cols="50 "
-        placeholder="I am the director of [the Plaintiff].  I am duly authorised to make this affirmation on behalf of [the Plaintiff]."></textarea>
+    <div class="affirmationContent">
+      <p>1.<textarea id="paragraph1" rows="4" cols="50 "
+          placeholder="I am the director of [the Plaintiff].  I am duly authorised to make this affirmation on behalf of [the Plaintiff]."></textarea>
+      </p>
+      <p>2.<textarea id="paragraph1" rows="4" cols="50 "
+          placeholder="I make this affirmation in support of the Plaintiff's Summons filed on [date] for [an injunction against the Defendant]. Unless otherwise stated, the facts deposed to here are true to the best of my knowledge, information, and belief."></textarea>
+      </p>
+      <p>3. <textarea id="paragraph3" rows="4" cols="50"
+          placeholder="(Summary of the facts and application of legal principles)"></textarea></p>
+      <button id="addParagraph">Add Paragraph</button>
+      <p><span id="conclusionPara"> 4. </span>
+        <textarea id="conclusion" rows="4" cols="50"
+          placeholder="For the above reasons, I humbly pray the Honourable Court make an order in terms of the Summons."></textarea>
+      </p>
+
+    </div>
+
+    <div class="siganatureBox">
+      <p>___________________________</p>
+      <p>Signature of <span class="deponent">[DEPONENT]</span></p>
+    </div>
+    <p>AFFIRMED at <textarea name="" id="" cols="30" rows="1" placeholder="address"></textarea>
     </p>
-    <p>2.<textarea id="paragraph1" rows="4" cols="50 "
-        placeholder="I make this affirmation in support of the Plaintiff's Summons filed on [date] for [an injunction against the Defendant]. Unless otherwise stated, the facts deposed to here are true to the best of my knowledge, information, and belief."></textarea>
+    <p>this day <input type="text" id="swornDateInput"> of 20 <input type="text" id="swornYearInput">.
     </p>
-    <p>3. <textarea id="paragraph3" rows="4" cols="50"
-        placeholder="(Summary of the facts and application of legal principles)"></textarea></p>
-    <button id="addParagraph">Add Paragraph</button>
-    <p><span id="conclusionPara"> 4. </span>
-      <textarea id="conclusion" rows="4" cols="50"
-        placeholder="For the above reasons, I humbly pray the Honourable Court make an order in terms of the Summons."></textarea>
-    </p>
-
-  </div>
-
-  <div class="siganatureBox">
-    <p>___________________________</p>
-    <p>Signature of <span class="deponent">[DEPONENT]</span></p>
-  </div>
-  <p>AFFIRMED at <textarea name="" id="" cols="30" rows="1" placeholder="address"></textarea>
-  </p>
-  <p>this day <input type="text" id="swornDateInput"> of 20 <input type="text" id="swornYearInput">.
-  </p>
-  <p>Before me,</p>
-  <textarea name="" id="" cols="30" rows="4"
-    placeholder="Solicitor/Commissioner of Oaths before whom the affirmation is made"></textarea>
-  <p>This affirmation is filed on behalf of <input type="text" id="side" placeholder="Plaintiff/Defendant">.</p>
-  <button id="printableVersionBtn">Printable Version in New Tab</button>
-  <script src="topRight.js"> </script>
-  <script src="deponentName.js"> </script>
-  <script src="paraBoxes.js"> </script>
-  <script src="printable.js"> </script>
+    <p>Before me,</p>
+    <textarea name="" id="" cols="30" rows="4"
+      placeholder="Solicitor/Commissioner of Oaths before whom the affirmation is made"></textarea>
+    <p>This affirmation is filed on behalf of <input type="text" id="side" placeholder="Plaintiff/Defendant">.</p>
+    <button id="printableVersionBtn">Printable Version in New Tab</button>
+    <script src="0topRight.js"> </script>
+    <script src="1parties.js"> </script>
+    <script src="2deponentName.js"> </script>
+    <script src="3paraBoxes.js"> </script>
+    <script src="4printable.js"> </script>
 </body>
 
 </html>

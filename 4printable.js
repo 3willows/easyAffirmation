@@ -1,5 +1,3 @@
-
-
 // Function to generate the printable version
 function generatePrintableVersion () {
   // Create a new window

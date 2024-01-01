@@ -1,5 +1,7 @@
 // enter case number on the top right corner
 
+// see also 2affirmationTitle.js
+
 const caseAlpha = document.querySelector('#caseAlpha')
 const caseAlphaAbbrev = document.querySelector('#caseAlphaAbbrev')
 

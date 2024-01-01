@@ -29,7 +29,6 @@
     <p>BETWEEN</p>
     <div id="pSideAll">
       <ul>
-
       </ul>
     </div>
     <form action="" id="pSideForm">
@@ -55,7 +54,10 @@
 
     <div class="midTitle">
       <p>(UNDER DEVELOPMENT)</p>
-      <p>AFFIRMATION OF <span class="deponent deponentTitle">[DEPONENT] </span> </p>
+      <p>
+        <input type="text" id="ordinalInput" min="1" max="50">
+        AFFIRMATION OF <span class="deponent deponentTitle">[DEPONENT] </span>
+      </p>
     </div>
 
     <div class="solemnlyAffirm">
@@ -88,7 +90,7 @@
     </div>
     <p>AFFIRMED at <textarea name="" id="" cols="30" rows="1" placeholder="address"></textarea>
     </p>
-    <p>this day <input type="text" id="swornDateInput"> of 20 <input type="text" id="swornYearInput">.
+    <p>this <input type="text" id="swornDateInput"> 
     </p>
     <p>Before me,</p>
     <textarea name="" id="" cols="30" rows="4"
@@ -97,7 +99,7 @@
     <button id="printableVersionBtn">Printable Version in New Tab</button>
     <script src="0topRight.js"> </script>
     <script src="1parties.js"> </script>
-    <script src="2deponentName.js"> </script>
+    <script src="2affirmationTitleDate.js"> </script>
     <script src="3paraBoxes.js"> </script>
     <script src="4printable.js"> </script>
 </body>

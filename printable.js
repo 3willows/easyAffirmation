@@ -1,4 +1,13 @@
-<!DOCTYPE html>
+
+
+// Function to generate the printable version
+function generatePrintableVersion () {
+  // Create a new window
+  const newWindow = window.open('', '_blank')
+
+  // Write the content to the new window
+  newWindow.document.write(`
+  <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -27,4 +36,16 @@
 
 </body>
 
-</html>
+</html> 
+  `)
+
+  // Close the document writing
+  newWindow.document.close()
+
+  // Focus on the new window
+  newWindow.focus()
+}
+
+// Event listener for the "Printable Version in New Tab" button
+const printableVersionBtn = document.getElementById('printableVersionBtn')
+printableVersionBtn.addEventListener('click', generatePrintableVersion)

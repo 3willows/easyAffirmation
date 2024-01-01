@@ -1,5 +1,5 @@
 // Function to generate the printable version
-function generatePrintableVersion () {
+function holding () {
   // Create a new window
   const newWindow = window.open('', '_blank')
 
@@ -23,7 +23,7 @@ function generatePrintableVersion () {
           <div class="card">
             <div class="card-content">
               <div class="content">
-                <h1 class="title is-1"> Printable version
+                <h1 class="title is-1"> Printable version & Backsheet
                 </h1>
                 <h2  class="title is-2">(UNDER DEVELOPMENT)</h2>
               </div>
@@ -45,5 +45,10 @@ function generatePrintableVersion () {
 }
 
 // Event listener for the "Printable Version in New Tab" button
-const printableVersionBtn = document.getElementById('printableVersionBtn')
-printableVersionBtn.addEventListener('click', generatePrintableVersion)
+const endHolding = document.querySelectorAll('.endHolding')
+
+endHolding.forEach(element => {
+  element.addEventListener('click', () => {
+    holding()
+  })
+})

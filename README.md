@@ -1,9 +1,9 @@
-## WHY?
+## Why?
 
 - Save time on purely mechanical aspects of making an affirmation, leaving more room to think about the substance.
 - Help people who have never seen an affirmation before (e.g. many law students) what one looks like.
 
-## USER STORY
+## User story
 
 1. The users: HK lawyers; law students; law teachers
 2. Flow:
@@ -12,13 +12,12 @@
       - A printable affirmation
       - Backcksheet
      
-## SCHEDULE
+## Schedule
 
 - [ ] Complete affirmation
-- [ ] Add instructions pop-up
 - [ ] Add landing page
    
-## PLAN FOR AFFIRMATION
+## Steps taken/to take
 
 - [x] Use [pandocs](https://github.com/jgm/pandoc) to generate an HTML template for affirmation.
 - [x] Make all the underlined parts text input boxes.
@@ -33,19 +32,20 @@
 - [ ] Output backsheet
 - [ ] Properly CSS and make responsive
       
-## CHANGES UNDER CONSIDERATION
+## Changes under consideration
 
 - [ ] Default the year of the case to this year?
 - [ ] Some way for the user to save progress without completing the affirmation?
+- [ ] Add instructions pop-up to the page?
       
-## KNOWN BUGS
+## Known bugs
       
-## NON FEATURES
+## Non-features
 
 - [ ] reminder about jurat rule
 - [ ] other case names/parties (e.g. HCZZ, Third Party)
       
-## POTENTIAL FUTURE PROJECTS
+## Potential future projects
 
 - Refactor this as a React App?  Is it worth it?
 - A similiar webpage for Summons

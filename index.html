@@ -10,9 +10,17 @@
 
 <body>
   <div class="topRightCorner">
-    <span id="caseAlphaAbbrev">HCA</span>
-    <span id="caseDigitAbbrev"> # / 2024
-    </span>
+    <div>
+      <span id="caseAlphaAbbrev">HCA</span>
+      <span id="caseDigitAbbrev"> # / 2024</span>
+    </div>
+    <div>
+      <span id="abbrevOrdinal">1st</span> 
+      :
+      <span class = "abbrevDeponent deponent">[DEPONENT NAME]</span>
+      :
+      <span id="abbrevDate"></span>
+    </div>
   </div>
   <div class="topTitle">
     <p>IN THE HIGH COURT OF THE</p>
@@ -55,7 +63,7 @@
     <div class="midTitle">
       <p>(UNDER DEVELOPMENT)</p>
       <p>
-        <input type="text" id="ordinalInput" min="1" max="50">
+        <input type="text" id="ordinalInput" placeholder="1st">
         AFFIRMATION OF <span class="deponent deponentTitle">[DEPONENT] </span>
       </p>
     </div>
@@ -90,21 +98,22 @@
     </div>
     <p>AFFIRMED at <textarea name="" id="" cols="30" rows="1" placeholder="address"></textarea>
     </p>
-    <p>this <input type="text" id="swornDateInput"> 
+    <p>this <input type="text" id="swornDateInput">
     </p>
     <p>Before me,</p>
     <textarea name="" id="" cols="30" rows="4"
       placeholder="Solicitor/Commissioner of Oaths before whom the affirmation is made"></textarea>
     <p>This affirmation is filed on behalf of <input type="text" id="side" placeholder="Plaintiff/Defendant">.</p>
 
-    <button class="endHolding">Printable Version in New Tab</button>
-    <button class="endHolding">Printable Version in New Tab</button>
+    <button class="endHolding">Printable Version</button>
+    <button class="endHolding">Backsheet</button>
 
     <script src="0topRight.js"> </script>
     <script src="1parties.js"> </script>
-    <script src="2affirmationTitleDate.js"> </script>
-    <script src="3paraBoxes.js"> </script>
-    <script src="4printable.js"> </script>
+    <script src="2affirmationTitle.js"> </script>
+    <script src="3date.js"> </script>
+    <script src="4paraBoxes.js"> </script>
+    <script src="5printable.js"> </script>
 </body>
 
 </html>

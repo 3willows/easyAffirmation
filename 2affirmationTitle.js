@@ -19,6 +19,14 @@ function updateOrdinalInput () {
     let value = parseInt(input.value)
     let ordinalValue = getOrdinal(value)
     input.value = ordinalValue
+
+    // update top right corner too
+
+    const abbrevOrdinal = document.querySelector('#abbrevOrdinal')
+    function topRightAbbrevUpdate () {
+      abbrevOrdinal.innerHTML = ordinalValue
+    }
+    topRightAbbrevUpdate()
   }
 }
 
@@ -32,35 +40,4 @@ document
   .getElementById('ordinalInput')
   .addEventListener('change', updateOrdinalInput)
 
-// Get date of today and inject to the bottom box as default
-
-function formatDate (date) {
-  const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
-  ]
-
-  const day = date.getDate()
-  const monthIndex = date.getMonth()
-  const year = date.getFullYear()
-
-  return `${day} ${months[monthIndex]} ${year}`
-}
-
-const currentDate = new Date()
-const formattedDate = formatDate(currentDate)
-console.log(formattedDate) // Outputs: e.g., "2 January 2024" (depending on the current date)
-
-const swornDateInput = document.querySelector('#swornDateInput')
-
-swornDateInput.value = formattedDate
+// Update topRightCorner

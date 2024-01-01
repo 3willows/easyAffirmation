@@ -16,5 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
     paragraph.textContent = `${paragraphNumber}. `
     paragraph.appendChild(newTextArea)
     affirmationContent.insertBefore(paragraph, addButton)
+
+    // update the paragraph number of the conclusion
+    const conclusionPara = document.querySelector('#conclusionPara')
+    conclusionPara.textContent = `${paragraphNumber+1}. `
   })
 })

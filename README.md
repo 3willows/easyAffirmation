@@ -27,7 +27,7 @@
 - [x] Add functionality for users to add more parties (multiple Ps, multiple Ds)
 - [x] Add box that permits user to say whether it is the 1st, 2nd or later affirmation.Set the Affirmation date to a default of today.
 - [x] Generate the Affirmation number, abbreviation of deponent, party on behalf of the affirmation, and the date of affirmation on the top right conrner.
-- [ ] For the text in the textboxes, use JS injection, not placeholders, for easy editing.
+- [x] For the text in the textboxes, use JS injection, not placeholders, for easy editing.
 - [ ] Output an HTML page with appropriate content
 - [ ] Output backsheet
 - [ ] Properly CSS and make responsive
@@ -39,7 +39,8 @@
 - [ ] Add instructions pop-up to the page?
       
 ## Known bugs
-      
+- [ ] If there is only 1 P or 1 D, they should be called simply the Plaintiff or the Defendant, not the 1st Plaintif/1st Defendant.
+
 ## Non-features
 
 - [ ] reminder about jurat rule

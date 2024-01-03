@@ -19,6 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // update the paragraph number of the conclusion
     const conclusionPara = document.querySelector('#conclusionPara')
-    conclusionPara.textContent = `${paragraphNumber+1}. `
+    conclusionParaNo.textContent = `${paragraphNumber+1}. `
   })
 })

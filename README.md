@@ -5,13 +5,14 @@
 
 ## User story
 
-1. The users: HK lawyers; law students; law teachers
-2. Flow:
+1. The users: HK lawyers; law students; law teachers.
+2. *Not* mobile friendly.
+3. Flow:
    - User fills in all the required text boxes.  The webpage formats/autocompletes as appropriate.
    - User presses 1 of 2 buttons at the bottom.  A new tab opens, showing either:-
       - A printable affirmation
       - Backcksheet
-3. The formatting is meant to be sensible but not perfect.  Users can further format with their preferred software.
+4. The formatting is meant to be sensible but not perfect.  Users can further format with their preferred software.
      
 ## Schedule
 

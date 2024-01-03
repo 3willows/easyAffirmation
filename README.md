@@ -31,9 +31,9 @@
 - [x] Generate the Affirmation number, abbreviation of deponent, party on behalf of the affirmation, and the date of affirmation on the top right conrner.
 - [x] For the text in the textboxes, use JS injection, not placeholders, for easy editing.
 - [ ] Output backsheet
-   - If the user did not enter necessary information, show an alert with all the incomplete fields
-   - Allow user to bypass this and print an incomplete backsheet
+   - If the user did not enter necessary information, replace with obvious placeholder values, e.g. name of famous House of Lords Judges
 - [ ] Output an HTML page with appropriate content
+    - Similiarly the user did not enter necessary information, replace with obvious placeholder values, e.g. name of famous House of Lords Judges
 - [ ] Properly CSS
 - [ ] Media query and alert users that the App is not intended to be used on mobile phones.
       

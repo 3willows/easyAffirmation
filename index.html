@@ -46,7 +46,6 @@
       </select>
       <input type="text" id="pSideName"><button>Add</button>
     </form>
-
     <p>and</p>
     <div id="dSideAll">
       <ul>
@@ -93,17 +92,18 @@
       <p>___________________________</p>
       <p>Signature of <span class="deponent">[DEPONENT]</span></p>
     </div>
-    <p>AFFIRMED at <textarea name="" id="" cols="30" rows="1" placeholder="address"></textarea>
+    <p>AFFIRMED at <textarea name="" id="affirmPlace" cols="30" rows="1" placeholder="address"></textarea>
     </p>
     <p>this <input type="text" id="swornDateInput">
     </p>
     <p>Before me,</p>
-    <textarea name="" id="" cols="30" rows="4"
+    <textarea name="" id=beforeMe"" cols="30" rows="4"
       placeholder="Solicitor/Commissioner of Oaths before whom the affirmation is made"></textarea>
+
     <p>This affirmation is filed on behalf of <input type="text" id="side" placeholder="Plaintiff/Defendant">.</p>
 
     <button class="endHolding">Printable Version</button>
-    <button class="endHolding">Backsheet</button>
+    <button class="endHolding" id="backSheetButton">Backsheet</button>
 
     <script src="0topRight.js"> </script>
     <script src="1parties.js"> </script>
@@ -112,6 +112,7 @@
     <script src="4paraBoxes.js"> </script>
     <script src="5printable.js"> </script>
     <script src="6injectText.js"> </script>
+    <script src="7backsheet.js"> </script>
 </body>
 
 </html>

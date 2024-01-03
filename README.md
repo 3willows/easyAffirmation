@@ -1,6 +1,6 @@
 ## Why?
 
-- Save time on purely mechanical aspects of making an affirmation, leaving more room to think about the substance.
+- Save time on purely mechanical aspects of making an affirmation, leave room to think about the substance.
 - Help people who have never seen an affirmation before (e.g. many law students) what one looks like.
 
 ## User story
@@ -11,6 +11,7 @@
    - User presses 1 of 2 buttons at the bottom.  A new tab opens, showing either:-
       - A printable affirmation
       - Backcksheet
+3. The formatting is meant to be sensible but not perfect.  Users can further format with their preferred software.
      
 ## Schedule
 
@@ -28,9 +29,12 @@
 - [x] Add box that permits user to say whether it is the 1st, 2nd or later affirmation.Set the Affirmation date to a default of today.
 - [x] Generate the Affirmation number, abbreviation of deponent, party on behalf of the affirmation, and the date of affirmation on the top right conrner.
 - [x] For the text in the textboxes, use JS injection, not placeholders, for easy editing.
-- [ ] Output an HTML page with appropriate content
 - [ ] Output backsheet
-- [ ] Properly CSS and make responsive
+   - If the user did not enter necessary information, show an alert with all the incomplete fields
+   - Allow user to bypass this and print an incomplete backsheet
+- [ ] Output an HTML page with appropriate content
+- [ ] Properly CSS
+- [ ] Media query and alert users that the App is not intended to be used on mobile phones.
       
 ## Changes under consideration
 
@@ -43,6 +47,7 @@
 
 ## Non-features
 
+- [ ] Mobile friendly version
 - [ ] reminder about jurat rule
 - [ ] other case names/parties (e.g. HCZZ, Third Party)
       
